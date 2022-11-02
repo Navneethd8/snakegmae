@@ -10,15 +10,15 @@ high_score = 0
 
 # Set up the screen
 wn = turtle.Screen()
-wn.title("Catepillar by Navneeth")
-wn.bgcolor("green")
+wn.title("Snake gmae by Navneeth")
+wn.bgcolor("light green")
 wn.setup(width=600, height=600)
 wn.tracer(0)  # Turns off the screen updates
 
 # Snake head
 head = turtle.Turtle()
 head.speed(0)
-head.shape("triangle")
+head.shape("square")
 head.color("red")
 head.penup()
 head.goto(0, 0)
@@ -27,8 +27,8 @@ head.direction = "stop"
 # Snake food
 food = turtle.Turtle()
 food.speed(0)
-food.shape("circle")
-food.color("brown")
+food.shape("square")
+food.color("black")
 food.penup()
 food.goto(0, 100)
 
@@ -127,8 +127,8 @@ while True:
         # Add a segment
         new_segment = turtle.Turtle()
         new_segment.speed(0)
-        new_segment.shape("circle")
-        new_segment.color("light green")
+        new_segment.shape("square")
+        new_segment.color("white")
         new_segment.penup()
         segments.append(new_segment)
 
